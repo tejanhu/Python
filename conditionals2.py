@@ -1,13 +1,10 @@
-def doSomethingAgain(num1,num2,flag):
+def doSomethingAgain(num1,num2):
     sum = num1+num2
     product = num1*num2
-    if(flag):
-        return sum
-    elif(num1==0):
+    if(num1==0):
         return num2
-    elif(num2==0):
-        return num1
     else:
-        return product
+        return num1
 
-print(doSomethingAgain(1,2,None))
+
+print(doSomethingAgain(0,2))
