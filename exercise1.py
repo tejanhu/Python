@@ -2,7 +2,7 @@ class Exercise1(object):
 
     # Retrieve input from user
     def getInput(self):
-        user_input = input("Enter something: ")
+        user_input = input("Enter your name: ")
         return user_input
 
     # Evaluate whether input contains valid expression and return the result
@@ -10,6 +10,7 @@ class Exercise1(object):
         try:
             user_input = input("Type an expression to evaluate: ")
             if(eval(user_input)):
+                some_list = [eval(user_input)]
                 return eval(user_input)
             else:
                 pass         
@@ -20,4 +21,5 @@ some_exercise = Exercise1()
 
 some_exercise.getInput()
 print(some_exercise.evalInput())
+
     
