@@ -1,6 +1,6 @@
-msg = "Hello World!";
+msg = "Hello World!"
 
 def greeting(msg):
-    print(msg);
+    print(msg)
 
-greeting(msg);
+greeting(msg)
