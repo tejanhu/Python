@@ -7,12 +7,14 @@ class Exercise1(object):
 
     # Evaluate whether input contains valid expression and return the result
     def evalInput(self):
-        user_input = input("Type an expression to evaluate: ")
-        if(eval(user_input)):
-            return eval(user_input)
-
-        else:
-            return "Error: Valid Expression Expected!"
+        try:
+            user_input = input("Type an expression to evaluate: ")
+            if(eval(user_input)):
+                return eval(user_input)
+            else:
+                pass         
+        except :
+            print("Error: Valid Expression Expected!")
 
 some_exercise = Exercise1()
 
